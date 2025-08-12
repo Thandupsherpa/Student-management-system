@@ -1,0 +1,15 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "A group assignment to understand git better.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
