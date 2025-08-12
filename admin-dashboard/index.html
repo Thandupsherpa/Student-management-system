@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-100">
+      <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between h-16">
+            <div class="flex items-center">
+              <h1 class="text-xl font-bold">Admin Dashboard</h1>
+            </div>
+            <div class="flex items-center">
+              <button class="p-2 rounded-full hover:bg-gray-100">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  ></path>
+                </svg>
+              </button>
+              <img
+                class="h-8 w-8 rounded-full ml-4"
+                src="https://via.placeholder.com/150"
+                alt="Profile"
+              />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white h-screen shadow-lg">
+          <div class="p-4">
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="block p-2 hover:bg-gray-100 rounded"
+                  >Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block p-2 hover:bg-gray-100 rounded"
+                  >Students</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block p-2 hover:bg-gray-100 rounded"
+                  >Teachers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block p-2 hover:bg-gray-100 rounded"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block p-2 hover:bg-gray-100 rounded"
+                  >Settings</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Stats Cards -->
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-gray-500 text-sm">Total Students</h3>
+              <p class="text-2xl font-bold" id="studentCount">1,234</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-gray-500 text-sm">Total Teachers</h3>
+              <p class="text-2xl font-bold" id="teacherCount">56</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-gray-500 text-sm">Active Courses</h3>
+              <p class="text-2xl font-bold" id="courseCount">12</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-gray-500 text-sm">Revenue</h3>
+              <p class="text-2xl font-bold" id="revenue">$52,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
