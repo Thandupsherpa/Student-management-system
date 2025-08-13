@@ -5,3 +5,4 @@ function calculateGrade(score) {
   else if (score >= 60) return 'D';
   else return 'F';
 }
+// Enhanced algorithm
